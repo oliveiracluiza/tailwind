@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+        rel="stylesheet"
+        href="tailwind.css"
+    >
+</head>
+<body class="bg-gray-50 text-gray-700">
+    <!--header-->
+    <div>
+        <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center justify-between">
+            <div class="font-black">
+                Logo
+            </div>
+            <ul class="ml-auto inline-flex space-x-3">
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover: text-gray-800 hover:underline">Como Reservar</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover: text-gray-800 hover:underline">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover: text-gray-800 hover:underline">Informações</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover: text-gray-800 hover:underline">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--fecha header-->
+
+    <!---banner-->
+    <div style="background: url('./img/hero-image-1.png'); height: 450px;">
+        <div class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
+            <div>
+                <div class="text-center">
+                    <h1 class="text-gray-200 text-3xl mb-2">Onde você quer ir?</h1>
+                    <p class="text-green-100">Escolha o estado e a cidade para achar os melhores resorts.</p>
+                </div>
+                <div class="mt-7">
+                    <form class="grid grid-cols-2 gap-4 ">
+                        <select class="bg-gray-50 px-3 py-2 border border-grey-300 rounded text-gray-500">
+                            <option value="">Escolha o estado</option>
+                        </select>
+                        <select class="bg-gray-50 px-3 py-2 border border-grey-300 rounded text-gray-500">
+                            <option value="">Escolha a cidade</option>
+                        </select>
+                    <button class="col-span-2 justify-center inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"><svg class="w-4 h-4 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                      </svg> Pesquisar resorts</button>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!--- fecha banner-->
+
+    <!--featured-->
+    <div>
+        <div class="container max-w-5xl mx-auto px-4 py-20">
+            <div class="flex flex-col-reverse lg:flex-row">
+                <div class=" lg: flex-1 pr-10">
+                    <div class="text-xs text-gray-500 font-medium">RESORT EM DESTAQUE</div>
+                    <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
+                    <div class="text-xs text-gray-500 font-medium mt-2">Hotel qualidade 5 estrelas</div>
+                    <div class="text-xs text-gray-500 font-medium mt-4">
+                        <p class="mb-4">O Ecoresort Praia do Forte, localizado na bela Bahia, é um destino paradisíaco que combina luxo e sustentabilidade em um só lugar. Rodeado por uma natureza exuberante, com praias de areia branca e águas cristalinas, o resort oferece uma experiência única de descanso e lazer. Com uma arquitetura que respeita e integra a paisagem local, o Ecoresort dispõe de acomodações confortáveis e elegantes, além de uma variedade de atividades recreativas e ecológicas. Desde caminhadas em trilhas ecológicas, passando pela observação de tartarugas marinhas, até esportes aquáticos e um spa de alto padrão, o Ecoresort Praia do Forte proporciona aos seus hóspedes uma estadia inesquecível, onde a tranquilidade e a beleza natural se encontram em perfeita harmonia.</p>
+                    </div>
+                    <button href='' class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">Solicitar reserva <svg class="w-4 h-4 ml-3" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+                      </svg></button>
+                </div>
+                <div class=" flex-shrink lg: ml-auto mb-5 lg:mb-0">
+                    <img src="./img/featured-img.png" width="450px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fecha featured-->
+    
+    <!--resorts grid-->
+    <div>
+        <div class="container max-w-5xl mx-auto px-4">
+            <div class="mb-20">
+                <h3 class="text-2xl text-center text-gray-500 font-semibold mb-8">Conheça mais resorts</h3>
+                <div class="grid grid-cols-4 grid-rows-2 gap-6 h-80">
+                    <div class="relative col-span-2 row-span-2 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Beach Park Resort
+                        </div>
+                        <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-30 z-10">
+                        <img src="./img/hotel-1.jpeg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative col-span-2 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Salinas do Maragogi Resort
+                        </div>
+                        <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-30 z-10">
+                        <img src="./img/hotel-2.jpeg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Grand Palladium
+                        </div>
+                        <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-30 z-10">
+                        <img src="./img/hotel-3.jpeg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Arraial d'Ajuda  Eco Resort
+                        </div>
+                        <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-30 z-10">
+                        <img src="./img/hotel-4.jpeg" class="w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fecha resorts grid-->
+
+    <!--form search-->
+    <div class="mb-20">
+        <div class="container max-w-5xl mx-auto px-4 flex justify-center ">
+            <div class="mt-7">
+                <form class="space-x-4">
+                    <select class="bg-gray-50 px-3 py-2 border border-grey-300 rounded text-gray-500">
+                        <option value="">Escolha o estado</option>
+                    </select>
+                    <select class="bg-gray-50 px-3 py-2 border border-grey-300 rounded text-gray-500">
+                        <option value="">Escolha a cidade</option>
+                    </select>
+                <button class=" inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"><svg class="w-4 h-4 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                  </svg> Pesquisar resorts</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--fecha form search-->
+
+    <!--footer-->
+        <div class="border-t border-gray-200">
+            <div class="container max-w-5xl px-4 mx-auto p-4 flex items-center justify-between">
+                <div class="text-gray-400 font-black">
+                    Logo
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href=""><img src="./img/icon-facebook.png"></a>
+                    <a href=""><img src="./img/icon-instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    <!--fecha footer-->
+</body>
+</html>
